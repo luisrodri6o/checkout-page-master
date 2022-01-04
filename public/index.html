@@ -16,7 +16,7 @@
     <header>
       <h1>Checkout</h1>
     </header>
-    <main class="main flex-column">
+    <main class="main">
       <div class="shop">
         <div class="order">
           <div class="product">
@@ -27,7 +27,7 @@
               <p>Vintage Backbag</p>
               <p>$54.99</p>
               <p>90.99</p>
-              <input type="number" />
+              <input type="number" class="amount" />
             </div>
           </div>
           <div class="product">
@@ -38,7 +38,7 @@
               <p>Levi Shoes</p>
               <p>$74.99</p>
               <p>$120.99</p>
-              <input type="number" />
+              <input type="number" class="amount"/>
             </div>
           </div>
         </div>
@@ -53,44 +53,59 @@
           </div>
         </div>
       </div>
+<!--                                                                   -->
       <form>
         <h4>contact information</h4>
-        <label for="email">email</label>
+        <label for="email">
+          email
+          <div class="item">
+            <span class="material-icons"> mail </span>
+            <input type="email" class="field" id="email" />
+          </div>
+        </label>
+        <label for="phone">phone
         <div class="item">
-          <span class="material-icons"> mail </span>
-          <input type="email" />
-        </div>
-        <label for="phone">phone</label>
-        <div class="item">
-          <i class="fas fa-phone-alt"></i>
-          <input type="tel" id="phone" />
+            <span class="material-icons">
+            call
+            </span>
+          </label>
+          <input class="field" type="tel" id="phone" />
         </div>
         <h4>shipping address</h4>
-        <label for="name">full name</label>
+        <label for="name">full name
         <div class="item">
-          <i class="fas fa-user-circle"></i>
-          <input type="text" />
-        </div>
-        <label for="address">address</label>
+          <span class="material-icons">
+          account_circle
+          </span>
+            <input class="field" type="text" id="name" />
+          </div>
+        </label>
+        <label for="address">address
         <div class="item">
-          <span class="material-icons"> home </span>
-          <input type="text" />
+            <span class="material-icons"> home </span>
+          </label>
+          <input class="field" type="text" id="address" />
         </div>
-        <label for="city">city</label>
+        <label for="city">city
         <div class="item">
-          <span class="material-icons"> location_city </span>
-          <input type="text" />
-        </div>
-        <label for="country">country</label>
+            <span class="material-icons"> location_city </span>
+            <input class="field" type="text" id="city" />
+          </div>
+        </label>
+        <div class="formColumn2 ">
+        <label for="country">country
         <div class="item">
-          <span class="material-icons"> public </span>
-          <input type="text" />
-        </div>
-        <label for="postcode">postcode</label>
-        <div class="item">
-          <span class="material-icons"> markunread_mailbox </span>
-          <input type="number" />
-        </div>
+            <span class="material-icons"> public </span>
+            <input class="field" type="text" id="country" />
+          </div>
+        </label>
+        <label for="postcode">postcode
+          <div class="item">
+            <span class="material-icons"> markunread_mailbox </span>
+            <input class="field" type="number" id="postcode" />
+          </div>
+        </label>
+      </div>
       </form>
     </main>
     <footer>
@@ -104,9 +119,5 @@
         >
       </p>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/38f3962215.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

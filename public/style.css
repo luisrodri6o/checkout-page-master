@@ -1,18 +1,20 @@
-.main {
-  background-color: tomato;
-  align-items: center;
-  text-align: center;
+body {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.flex-column {
+.main {
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 .shop {
   background: #928d8d;
   width: max-content;
 }
 .order {
-  background: #5858ca;
+  /* background: #5858ca; */
   justify-content: center;
 }
 .product {
@@ -21,9 +23,7 @@
   display: flex;
   /* margin: 25% 20%; */
 }
-.material-icons {
-  background: khaki;
-}
+
 img {
   object-fit: cover;
   width: 9em;
@@ -32,18 +32,48 @@ img {
 .info {
   background: #54b464;
   opacity: 50%;
-  margin: 0% 5%;
+  margin: 0% 3%;
   width: 50%;
 }
 .item {
-  background: #719c77;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  padding: 1% 5%;
+  /* background: #719c77; */
   border: 1px solid #828282;
   border-radius: 12px;
   font-size: 2em;
+  align-items: center;
 }
-@media screen and(min-width:660px) {
+.field {
+  margin: 5%;
+  height: 0.5em;
+  border: none;
+  width: inherit;
+  background: none;
+}
+form {
+  max-width: 50%;
+  min-width: 40%;
+  padding: 5%;
+  /* background: #796eda; */
+}
+.formColumn2 {
+  background: rgb(100, 205, 219);
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.formColumn2 label {
+  background-color: khaki;
+  width: 10%;
+}
+
+@media screen and (min-width: 660px) {
   .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row-reverse;
+    column-gap: 9%;
   }
 }
