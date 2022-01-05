@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  font-family: "montserrat";
+}
 body {
   display: flex;
   flex-direction: column;
@@ -37,6 +41,7 @@ img {
 }
 .item {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 10fr;
   padding: 1% 5%;
   /* background: #719c77; */
@@ -46,11 +51,12 @@ img {
   align-items: center;
 }
 .field {
+  width: 90%;
   margin: 5%;
-  height: 0.5em;
+  height: 0.8em;
   border: none;
-  width: inherit;
   background: none;
+  font-size: 0.5em;
 }
 form {
   max-width: 50%;
@@ -64,11 +70,12 @@ form {
   width: 100%;
 
   display: grid;
+  gap: 5%;
   grid-template-columns: 1fr 1fr;
 }
 .formColumn2 label {
   background-color: khaki;
-  width: 10%;
+  width: 100%;
 }
 
 @media screen and (min-width: 660px) {
