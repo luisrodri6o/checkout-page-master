@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <h1>Checkout</h1>
+      <h1 class="title">Checkout</h1>
     </header>
     <main class="main">
       <div class="shop">
@@ -24,10 +24,18 @@
               <img src="photo1.png" alt="Vintage Backbag" />
             </picture>
             <div class="info">
-              <p>Vintage Backbag</p>
-              <p>$54.99</p>
-              <p>90.99</p>
-              <input type="number" class="amount" />
+              <h3>Vintage Backbag</h3>
+              <div class="price">
+                <p>$54.99</p>
+                <p>$90.99</p>
+              </div>
+            <div class="wish">
+                
+                <button>-</button>
+                <input type="number" maxlength="3" min="0"  />
+                <button>+</button>
+               
+              </div>
             </div>
           </div>
           <div class="product">
@@ -35,21 +43,29 @@
               <img src="photo2.png" alt="Vintage Backbag" />
             </picture>
             <div class="info">
-              <p>Levi Shoes</p>
-              <p>$74.99</p>
-              <p>$120.99</p>
-              <input type="number" class="amount"/>
+              <h3>Levi Shoes</h3>
+              <div class="price">
+                <p>$74.99</p>
+                <p>$120.99</p>
+              </div>
+              <div class="wish">
+              
+                <button>-</button>
+                <input type="number" maxlength="3" />
+                <button>+</button>
+                
+              </div>
             </div>
           </div>
         </div>
         <div class="cost">
           <div class="total">
-            <p>shipping</p>
-            <output>$548454</output>
+            <h3>shipping</h3>
+            <h4>$19</h4>
           </div>
           <div class="total">
-            <p>total</p>
-            <output>$5645</output>
+            <h3>total</h3>
+            <h4>$148.28</h4>
           </div>
         </div>
       </div>
