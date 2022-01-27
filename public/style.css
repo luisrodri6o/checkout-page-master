@@ -47,7 +47,6 @@ footer {
   padding: 3%;
   background: #f2f2f2;
   width: 90%;
-  max-width: 23em;
   height: max-content;
   border-radius: 0.7em;
 }
@@ -183,12 +182,20 @@ form p {
 form button {
   background: #f2994a;
   padding: 1em 2em;
-  border-radius: 0.4em;
+  border-radius: 12px;
+  color: #fff;
 }
 form .btn {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+input[type="checkbox"] {
+  margin: 0 1em;
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  padding: 10px;
 }
 /*                                      responsive                               */
 
@@ -196,8 +203,5 @@ form .btn {
   .main {
     flex-direction: row-reverse;
     column-gap: 11%;
-  }
-  .shop {
-    width: 65%;
   }
 }
