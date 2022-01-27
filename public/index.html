@@ -13,10 +13,12 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
     <header>
       <h1 class="title">Checkout</h1>
     </header>
     <main class="main">
+      <!--                                shop                             -->
       <div class="shop">
         <div class="order">
           <div class="product">
@@ -24,17 +26,15 @@
               <img src="photo1.png" alt="Vintage Backbag" />
             </picture>
             <div class="info">
-              <h3>Vintage Backbag</h3>
+              <h4> Vintage Backbag </h4>
               <div class="price">
-                <p>$54.99</p>
+                <p><strong>$54.99</strong></p>
                 <p>$90.99</p>
               </div>
-            <div class="wish">
-                
+              <div class="wish"> 
                 <button>-</button>
-                <input type="number" maxlength="3" min="0"  />
+                <input type="number"  maxlength="3" min="0"  />
                 <button>+</button>
-               
               </div>
             </div>
           </div>
@@ -43,17 +43,15 @@
               <img src="photo2.png" alt="Vintage Backbag" />
             </picture>
             <div class="info">
-              <h3>Levi Shoes</h3>
+              <h4>Levi Shoes</h4>
               <div class="price">
-                <p>$74.99</p>
+                <p> <strong> $74.99</strong></p>
                 <p>$120.99</p>
               </div>
-              <div class="wish">
-              
+              <div class="wish">              
                 <button>-</button>
                 <input type="number" maxlength="3" />
-                <button>+</button>
-                
+                <button>+</button>               
               </div>
             </div>
           </div>
@@ -69,26 +67,26 @@
           </div>
         </div>
       </div>
-<!--                                                                   -->
+<!--                             form                                      -->
       <form>
         <h4>contact information</h4>
         <label for="email">
-          email
+          <p>email</p>
           <div class="item">
             <span class="material-icons"> mail </span>
             <input type="email" class="field" id="email" placeholder="Enter your email..." />
           </div>
         </label>
-        <label for="phone">phone
+        <label for="phone"><p>phone</p>
         <div class="item">
             <span class="material-icons">
             call
             </span>
-          </label>
-          <input class="field" type="tel" id="phone" placeholder="Enter your phone..." />
-        </div>
-        <h4>shipping address</h4>
-        <label for="name">full name
+            <input class="field" type="tel" id="phone" placeholder="Enter your phone..." />
+          </div>
+        </label>
+        <h4 class="space"> <h4>shipping address</h4>
+        <label for="name"> <p> full name </p>
         <div class="item">
           <span class="material-icons">
           account_circle
@@ -96,34 +94,41 @@
             <input class="field" type="text" id="name" placeholder="Rodney Cotton"/>
           </div>
         </label>
-        <label for="address">address
+        <label for="address"> <p> address</p>
         <div class="item">
             <span class="material-icons"> home </span>
-          </label>
-          <input class="field" type="text" id="address" placeholder="Your address.."/>
-        </div>
-        <label for="city">city
+            <input class="field" type="text" id="address" placeholder="Your address.."/>
+          </div>
+        </label>
+        <label for="city"> <p> city </p>
         <div class="item">
             <span class="material-icons"> location_city </span>
             <input class="field" type="text" id="city" placeholder="Your city.." />
           </div>
         </label>
-        <div class="formColumn2 ">
-        <label for="country">country
+        <div class="formColumn2">
+        <label for="country"> <p> country </p>
         <div class="item">
             <span class="material-icons"> public </span>
             <input class="field" type="text" id="country" placeholder="Your country.." />
           </div>
         </label>
-        <label for="postcode">postcode
+        <label for="postcode"> <p> postcode </p>
           <div class="item">
             <span class="material-icons"> markunread_mailbox </span>
             <input class="field" type="number" id="postcode" placeholder="Your postal code.." />
           </div>
         </label>
       </div>
+      <p>
+        <p><input type="checkbox">  Save this information for next time</p>
+      </p>
+      <div class="btn">
+        <button>continue</button>
+      </div>
       </form>
     </main>
+    </div>
     <footer>
       <p>
         created by <strong>luisrodri6o<a href=""></a></strong
