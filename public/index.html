@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="devchallenges.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link
@@ -10,7 +11,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>checkout-page-master</title>
   </head>
   <body>
     <div class="container">
@@ -28,13 +29,13 @@
             <div class="info">
               <h4> Vintage Backbag </h4>
               <div class="price">
-                <p><strong>$54.99</strong></p>
-                <p>$90.99</p>
+                <p class="current">$<strong id="backbagCurrent">54.99</strong></p>
+                <p class="previus">$<strong id="backbagPrevius">90.99</strong> </p>
               </div>
               <div class="wish"> 
-                <button>-</button>
-                <input type="number"  maxlength="3" min="0"  />
-                <button>+</button>
+                <button id="down1" class="bt">&#x2500;</button>
+                <span id="backbag" class="quantity">1</span>
+                <button id="up1" class="bt">&#x1f7a4;</button>
               </div>
             </div>
           </div>
@@ -45,13 +46,13 @@
             <div class="info">
               <h4>Levi Shoes</h4>
               <div class="price">
-                <p> <strong> $74.99</strong></p>
-                <p>$120.99</p>
+                <p class="current">$<strong id="shoesCurrent">74.99</strong></p>
+                <p class="previus">$<strong id="shoesPrevius">120.99</strong> </p>
               </div>
               <div class="wish">              
-                <button>-</button>
-                <input type="number" maxlength="3" />
-                <button>+</button>               
+                <button id="down2">&#x2500;</button>
+                <span id="shoes" class="quantity">1</span>
+                <button id="up2"> &#x1f7a4;</button>               
               </div>
             </div>
           </div>
@@ -63,13 +64,13 @@
           </div>
           <div class="total">
             <h3>total</h3>
-            <h4>$148.28</h4>
+            <h4>$<i id="total">164.98</i></h4>
           </div>
         </div>
       </div>
 <!--                             form                                      -->
-      <form>
-        <h4>contact information</h4>
+      <form >
+        <h3> Contact information</h3>
         <label for="email">
           <p>email</p>
           <div class="item">
@@ -85,7 +86,7 @@
             <input class="field" type="tel" id="phone" placeholder="Enter your phone..." />
           </div>
         </label>
-        <h4 class="space"> <h4>shipping address</h4>
+        <h4 class="space"> <h3>Shipping address</h3>
         <label for="name"> <p> full name </p>
         <div class="item">
           <span class="material-icons">
@@ -124,21 +125,22 @@
         <p><input type="checkbox">  Save this information for next time</p>
       </p>
       <div class="btn">
-        <button>continue</button>
+        <button>Continue</button>
       </div>
       </form>
     </main>
     </div>
     <footer>
       <p>
-        created by <strong>luisrodri6o<a href=""></a></strong
+        created by <strong><a href="https://github.com/luisrodri6o/checkout-page-master.git" target="blank">luisrodri6o</a></strong
         ><a
-          href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO"
+          href="https://devchallenges.io/"
           target="blank"
         >
           - devChallenge</a
         >
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
